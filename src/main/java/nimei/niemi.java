@@ -14,10 +14,10 @@ public class niemi {
 	try {
 		String sql="insert into aaa value(?,?)";
 		Class.forName("org.gjt.mm.mysql.Driver").newInstance();
-		System.out.println("¼ÓÔØÇı¶¯");
+		System.out.println("åŠ è½½é©±åŠ¨");
 		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost/haha?user=root&password=123456");
-		System.out.println("»ñÈ¡Á¬½Ó");
-		PreparedStatement ps=conn.prepareStatement(sql);//´´½¨¼ÓÔØSQLµÄ¶ÔÏó
+		System.out.println("è·å–è¿æ¥");
+		PreparedStatement ps=conn.prepareStatement(sql);//åˆ›å»ºåŠ è½½SQLçš„å¯¹è±¡
 		ps.setString(1, "haha");
 		ps.setInt(2, 123);
 		ps.executeUpdate();
@@ -31,10 +31,10 @@ public void insert(){
 	try {
 		String sql="update aaa set name=? where age=?";
 		Class.forName("org.gjt.mm.mysql.Driver").newInstance();
-		System.out.println("¼ÓÔØÇı¶¯");
+		System.out.println("åŠ è½½é©±åŠ¨");
 		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost/haha?user=root&password=123456");
-		System.out.println("»ñÈ¡Á¬½Ó");
-		PreparedStatement ps=conn.prepareStatement(sql);//´´½¨¼ÓÔØSQLµÄ¶ÔÏó
+		System.out.println("è·å–è¿æ¥");
+		PreparedStatement ps=conn.prepareStatement(sql);//åˆ›å»ºåŠ è½½SQLçš„å¯¹è±¡
 		ps.setString(1, "qq");
 		ps.setInt(2, 123);
 		ps.executeUpdate();

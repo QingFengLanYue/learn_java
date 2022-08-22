@@ -4,7 +4,7 @@ public class Plane extends MoveTools {
 
 	@Override
 	public void run() {
-		System.out.println("»ÓÎè×ÅÒşĞÎµÄ³á°òÀ´·ÉÏè!!!");
+		System.out.println("æŒ¥èˆç€éšå½¢çš„ç¿…è†€æ¥é£ç¿”!!!");
 	}
 
 }
