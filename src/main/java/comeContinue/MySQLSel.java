@@ -1,9 +1,14 @@
+package comeContinue;
+
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 
-public class MySQLAdd {
-    public static void Add(String[] stuinfo) {
+public class MySQLSel {
+    public static ArrayList<String> Select(String id) {
+        ArrayList<String> stu = new ArrayList<String>();
         Connection con;//声明一个连接对象
         //遍历查询结果集
         try {
@@ -11,20 +16,23 @@ public class MySQLAdd {
             if(!con.isClosed())
                 System.out.println("Succeeded connecting to the Database!");
             Statement statement = con.createStatement(); //2.创建statement类对象，用来执行SQL语句！！
-            String sql = "INSERT INTO cs_03(id,name) values('%s','%s')";//要执行的SQL语句
-            if(statement.executeUpdate(String.format(sql,stuinfo[0],stuinfo[1]))!=0)
-                System.out.println("插入成功");
-            else
-                System.out.println("插入失败");
+            String sql = "SELECT * FROM cs_03 WHERE id = %s";//要执行的SQL语句
+            ResultSet rs = statement.executeQuery(String.format(sql,id));
+            while(rs.next()){
+                stu.add(rs.getString("id").trim());
+                stu.add(rs.getString("name").trim());
+            }
+            MySQLconnection.close(rs);
             MySQLconnection.close(statement);
             MySQLconnection.close(con);
+            return stu;
         }	catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
         }
+        return stu;
     }
     public static void main(String[] args) {
-        String[] stuinfo = {"123456","小明"};
-        Add(stuinfo);
+        System.out.println(Select("123"));
     }
 }
