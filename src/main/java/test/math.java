@@ -1,4 +1,4 @@
-package math×÷Òµ;
+package test;
 
 import java.util.Scanner;
 
@@ -16,6 +16,6 @@ public class math {
 		Scanner sc2=new Scanner(System.in);
 		;int y=sc2.nextInt();
 		System.out.println(Math.round(Math.cbrt(Math.max(Math.abs(x),Math.abs(y)))));
-		}
+	}
 
 }

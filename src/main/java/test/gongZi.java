@@ -1,16 +1,16 @@
 package test;
 import java.util.Scanner;
 public class gongZi
-{ 
- public static void main(String [] args)
-{       
-	System.out.print("ÇëÊäÈë¹¤×Ê;");
-	Scanner a=new Scanner(System.in);
-	double b=a.nextInt();
-	if (b>3500)
-	System.out.println("¹¤×Ê"+b+"Ë°ºó×Ü¹²"+b*0.95);
-	else
-	System.out.println("¹¤×Ê"+b+"Ë°ºó×Ü¹²"+b);
+{
+	public static void main(String [] args)
+	{
+		System.out.print("è¯·è¾“å…¥å·¥èµ„;");
+		Scanner a=new Scanner(System.in);
+		double b=a.nextInt();
+		if (b>3500)
+			System.out.println("å·¥èµ„"+b+"ç¨åæ€»å…±"+b*0.95);
+		else
+			System.out.println("å·¥èµ„"+b+"ç¨åæ€»å…±"+b);
 
-}	
+	}
 }

@@ -2,14 +2,14 @@ package test;
 
 import java.util.Scanner;
 
-public class ÈòÄê {
+public class é—°å¹´ {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("ÇëÊäÈëÄê·İ");
+		System.out.println("è¯·è¾“å…¥å¹´ä»½");
 		Scanner sc1=new Scanner(System.in);
 		int i=sc1.nextInt();
 		if(i%4==0)
