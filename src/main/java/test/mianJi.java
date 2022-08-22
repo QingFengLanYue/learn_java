@@ -4,40 +4,40 @@ public class mianJi
 	{
 	public static void main(String args [])
 		{
-		System.out.println("ÇëÑ¡ÔñÍ¼ĞÎÀàĞÍ£º");
-		System.out.println("1:³¤·½ĞÎ");
-		System.out.println(" 2:Ô²ĞÎ ");
-		System.out.println(" 3:Èı½ÇĞÎ ");
-		System.out.print("ÇëÊäÈëÑ¡Ïî£º");
+		System.out.println("è¯·é€‰æ‹©å›¾å½¢ç±»å‹ï¼š");
+		System.out.println("1:é•¿æ–¹å½¢");
+		System.out.println(" 2:åœ†å½¢ ");
+		System.out.println(" 3:ä¸‰è§’å½¢ ");
+		System.out.print("è¯·è¾“å…¥é€‰é¡¹ï¼š");
 		Scanner a=new Scanner(System.in);
 		int b=a.nextInt();
 		if(b==1)
 		{
-			System.out.print("ÄãÑ¡µÄ³¤·½ĞÎ£¬ÇëÊäÈë³¤£º");
+			System.out.print("ä½ é€‰çš„é•¿æ–¹å½¢ï¼Œè¯·è¾“å…¥é•¿ï¼š");
 			Scanner a1=new Scanner(System.in);
 			int b1=a1.nextInt();
-			System.out.print("ÇëÊäÈë¿í£º");	
+			System.out.print("è¯·è¾“å…¥å®½ï¼š");	
 			Scanner a2=new Scanner(System.in);
 			int b2=a2.nextInt();
-			System.out.println("³¤·½ĞÎµÄÃæ»ıÎª"+b1*b2);
+			System.out.println("é•¿æ–¹å½¢çš„é¢ç§¯ä¸º"+b1*b2);
 		}
 		else if(b==2)
 			{
-			System.out.print("ÄãÑ¡µÄÔ²£¬ÇëÊäÈë°ë¾¶£º");	
+			System.out.print("ä½ é€‰çš„åœ†ï¼Œè¯·è¾“å…¥åŠå¾„ï¼š");	
 			Scanner a3=new Scanner(System.in);
 			int b3=a3.nextInt();
-			System.out.println("Ô²µÄÃæ»ıÎª"+b3*b3*3.14);
+			System.out.println("åœ†çš„é¢ç§¯ä¸º"+b3*b3*3.14);
 			}
 		else if(b==3)
 			{
-			System.out.print("ÄãÑ¡µÄÈı½ÇĞÎ£¬ÇëÊäÈëµ×£º");	
+			System.out.print("ä½ é€‰çš„ä¸‰è§’å½¢ï¼Œè¯·è¾“å…¥åº•ï¼š");	
 			Scanner a4=new Scanner(System.in);
 			int b4=a4.nextInt();
 
-			System.out.print("ÇëÊäÈë¸ß£º");	
+			System.out.print("è¯·è¾“å…¥é«˜ï¼š");	
 			Scanner a5=new Scanner(System.in);
 			int b5=a5.nextInt();
-			System.out.println("Èı½ÇĞÎµÄÃæ»ıÎª"+b5*b4*0.5);
+			System.out.println("ä¸‰è§’å½¢çš„é¢ç§¯ä¸º"+b5*b4*0.5);
 			}
 	
 		}		
