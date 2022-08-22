@@ -4,31 +4,31 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ÎÄ¼ş {
+public class æ–‡ä»¶ {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("ÇëÊäÈëÎÄ¼ş¼ĞÃû³Æ£º");
+		System.out.println("è¯·è¾“å…¥æ–‡ä»¶å¤¹åç§°ï¼š");
 		Scanner sc1=new Scanner(System.in);
 		String a=sc1.next();
 		File b=new File("\\E:\\"+a);
 		if(b.exists()==true)
 		{
-			System.out.println(a+"ÎÄ¼ş¼ĞÒÑ´æÔÚ");
+			System.out.println(a+"æ–‡ä»¶å¤¹å·²å­˜åœ¨");
 		}
 		else
 		{
 			b.mkdir();
-			System.out.println("ÇëÔÚ"+a+"ÊäÈë×ÓÎÄ¼ş¼ĞÃû³Æ£º");
+			System.out.println("è¯·åœ¨"+a+"è¾“å…¥å­æ–‡ä»¶å¤¹åç§°ï¼š");
 			Scanner sc2=new Scanner(System.in);
 			String a1=sc2.next();
 			File b1=new File("\\E:\\"+a+"\\"+a1);
 			b1.mkdir();
 			
-			System.out.println("ÇëÔÚ"+a1+"ÎÄ¼ş¼ĞÏÂÊäÈëµÚÒ»¸ötxtÎÄ¼şÃû³Æ");
+			System.out.println("è¯·åœ¨"+a1+"æ–‡ä»¶å¤¹ä¸‹è¾“å…¥ç¬¬ä¸€ä¸ªtxtæ–‡ä»¶åç§°");
 			Scanner sc3=new Scanner(System.in);
 			String a2=sc3.next();
 			File b2=new File("\\E:\\"+a+"\\"+a1+"\\"+a2);
@@ -40,13 +40,13 @@ public class ÎÄ¼ş {
 				e.printStackTrace();
 				}
 				
-			System.out.println("ÇëÔÚ"+a1+"ÎÄ¼ş¼ĞÏÂÊäÈëµÚ¶ş¸ötxtÎÄ¼şÃû³Æ");
+			System.out.println("è¯·åœ¨"+a1+"æ–‡ä»¶å¤¹ä¸‹è¾“å…¥ç¬¬äºŒä¸ªtxtæ–‡ä»¶åç§°");
 			Scanner sc4=new Scanner(System.in);
 			String a3=sc4.next();
 			File b3=new File("\\E:\\"+a+"\\"+a1+"\\"+a3);
 			if(b3.exists()==true)
 			{
-					System.out.println(a2+"ÎÄ¼şÒÑ´æÔÚ");
+					System.out.println(a2+"æ–‡ä»¶å·²å­˜åœ¨");
 			}
 			else
 			{
@@ -56,24 +56,24 @@ public class ÎÄ¼ş {
 							// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-				System.out.println("ÇëÔÚ"+a1+"ÎÄ¼ş¼ĞÏÂÊäÈëµÚÈı¸öÎÄ¼ş¼ĞÃû³Æ");
+				System.out.println("è¯·åœ¨"+a1+"æ–‡ä»¶å¤¹ä¸‹è¾“å…¥ç¬¬ä¸‰ä¸ªæ–‡ä»¶å¤¹åç§°");
 				Scanner sc5=new Scanner(System.in);
 				String a4=sc5.next();
 				File b4=new File("\\E:\\"+a+"\\"+a1+"\\"+a4);
 				b4.mkdir();
 							
-				System.out.println("ĞŞ¸ÄÇ°µÄÎÄ¼şÃû³Æ£º");
+				System.out.println("ä¿®æ”¹å‰çš„æ–‡ä»¶åç§°ï¼š");
 				String [] s=b1.list();
 				for(int i=0;i<s.length;i++)
 						{
 							System.out.println((s[i]));
 						}
-				System.out.println("ÇëÊäÈëÒ»¸öÎÄ¼şÃû³ÆÈ¥Ìæ»»"+a3+"µÄÎÄ¼şÃû³Æ£º");
+				System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ–‡ä»¶åç§°å»æ›¿æ¢"+a3+"çš„æ–‡ä»¶åç§°ï¼š");
 				Scanner sc6=new Scanner(System.in);
 				String a5=sc6.next();
 				b3.renameTo(new File("\\E:\\"+a+"\\"+a1+"\\"+a5));
 				b3.setReadOnly();
-				System.out.println("ĞŞ¸ÄºóµÄÎÄ¼şÃû³Æ£º");
+				System.out.println("ä¿®æ”¹åçš„æ–‡ä»¶åç§°ï¼š");
 				String [] s1=b1.list();
 				for(int j=0;j<s1.length;j++)
 					{   

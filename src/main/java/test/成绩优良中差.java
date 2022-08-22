@@ -2,7 +2,7 @@ package test;
 
 import java.util.Scanner;
 
-public class ³É¼¨ÓÅÁ¼ÖĞ²î {
+public class æˆç»©ä¼˜è‰¯ä¸­å·® {
 
 	/**
 	 * @param args
@@ -11,7 +11,7 @@ public class ³É¼¨ÓÅÁ¼ÖĞ²î {
 		// TODO Auto-generated method stub
 		for(int n=1;n>=1;n++)
 		{
-			System.out.println("ÇëÊäÈë³É¼¨");
+			System.out.println("è¯·è¾“å…¥æˆç»©");
 			for(int i=1;i>=1;)
 			{
 				Scanner sc1=new Scanner(System.in);
@@ -22,30 +22,30 @@ public class ³É¼¨ÓÅÁ¼ÖĞ²î {
 					{
 						if(x<=60)
 						{
-							System.out.println("²»¼°¸ñ");
+							System.out.println("ä¸åŠæ ¼");
 						}
 						else if(x>60&x<70)
 						{
-							System.out.println("¼°¸ñ");
+							System.out.println("åŠæ ¼");
 						}
 						else if(x>70&x<80)
 						{
-							System.out.println("Ò»°ã");
+							System.out.println("ä¸€èˆ¬");
 						}
 						else if(x>80&x<90)
 						{
-							System.out.println("Á¼");
+							System.out.println("è‰¯");
 						}
 						else if(x>90)
 						{
-							System.out.println("ÓÅĞã");
+							System.out.println("ä¼˜ç§€");
 						}
 						i=0;
 						}
 					}
 				else 
 				{
-					System.out.println("ÊäÈë³É¼¨ÎŞĞ§£¬ÇëÖØĞÂÊäÈë");
+					System.out.println("è¾“å…¥æˆç»©æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥");
 				}
 			}
 		}

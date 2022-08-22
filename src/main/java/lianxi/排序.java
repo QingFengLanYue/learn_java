@@ -1,6 +1,6 @@
 package lianxi;
 
-public class ÅÅĞò {
+public class æ’åº {
 
 	
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
 package test;
-class ÆæÊý
+class å¥‡æ•°
 {
 	public static void main (String[]args)
 	{

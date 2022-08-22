@@ -1,23 +1,23 @@
 package lianxi;
 
-public class ×Ö·ûString {
+public class å­—ç¬¦String {
 
 	
 	public static void main(String[] args) {
 		String name=" abdsbddh23bgSA1dd23541sdj   ";
 		
 		
-		System.out.println(name.charAt(2));//·µ»ØµÚ¶ş¸ö×Ö·û
-		System.out.println(name.length());//·µ»Ø×Ö·û´®³¤¶È
-		System.out.println(name.indexOf("bd"));//·µ»ØbdµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
-		System.out.println(name.indexOf("dd", 6));//·µ»Ø´ÓµÚ6¸öÎ»ÖÃ¿ªÊ¼µÚÒ»´Î³öÏÖddµÄÎ»ÖÃ
-		System.out.println(name.replace("dd", "°¡¹ş¹ş"));//°Ñdd×Ö·û´®»»³É°¡¹ş¹ş
-		System.out.println(name.toUpperCase());//°Ñ×Ö·û´®µÄĞ¡Ğ´»»³É´óĞ´
-		System.out.println(name.toLowerCase());//°Ñ×Ö·û´®»»³Éxiaoxie
-		System.out.println(name.trim());//°Ñ×Ö·û´®Ç°±ßºÍºó±ßµÄ¿Õ¸ñÈ¥µô
+		System.out.println(name.charAt(2));//è¿”å›ç¬¬äºŒä¸ªå­—ç¬¦
+		System.out.println(name.length());//è¿”å›å­—ç¬¦ä¸²é•¿åº¦
+		System.out.println(name.indexOf("bd"));//è¿”å›bdç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
+		System.out.println(name.indexOf("dd", 6));//è¿”å›ä»ç¬¬6ä¸ªä½ç½®å¼€å§‹ç¬¬ä¸€æ¬¡å‡ºç°ddçš„ä½ç½®
+		System.out.println(name.replace("dd", "å•Šå“ˆå“ˆ"));//æŠŠddå­—ç¬¦ä¸²æ¢æˆå•Šå“ˆå“ˆ
+		System.out.println(name.toUpperCase());//æŠŠå­—ç¬¦ä¸²çš„å°å†™æ¢æˆå¤§å†™
+		System.out.println(name.toLowerCase());//æŠŠå­—ç¬¦ä¸²æ¢æˆxiaoxie
+		System.out.println(name.trim());//æŠŠå­—ç¬¦ä¸²å‰è¾¹å’Œåè¾¹çš„ç©ºæ ¼å»æ‰
 		System.out.println(name.toUpperCase());//
-		System.out.println(name.valueOf(32));//×ª»¯³ÉÆäËûÊı¾İÀàĞÍ
-		System.out.println(name.concat("we"));//°Ñ×Ö·û´®we¼Óµ½×Ö·û´®µÄºó±ß
+		System.out.println(name.valueOf(32));//è½¬åŒ–æˆå…¶ä»–æ•°æ®ç±»å‹
+		System.out.println(name.concat("we"));//æŠŠå­—ç¬¦ä¸²weåŠ åˆ°å­—ç¬¦ä¸²çš„åè¾¹
 		
 		System.out.println(name); 
 		

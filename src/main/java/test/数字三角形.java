@@ -1,7 +1,7 @@
 package test;
 
 
-public class Êý×ÖÈý½ÇÐÎ {
+public class æ•°å­—ä¸‰è§’å½¢ {
 
 	/**
 	 * @param args

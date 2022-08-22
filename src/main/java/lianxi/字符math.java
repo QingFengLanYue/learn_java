@@ -1,19 +1,19 @@
 
 package lianxi;
 
-public class ×Ö·ûmath {
+public class å­—ç¬¦math {
 	public static void main(String args[]){
 	int a=-2;
 	double b=3.46;
 	//System.out.println(b.abs());
 	System.out.println(Math.abs(a));
-	System.out.println(Math.pow(a, b));//aµÄb´ÎÃİ
-	System.out.println(Math.sqrt(b));//bµÄÆ½·½¸ù
-	System.out.println(Math.log(b));//bµÄ×ÔÈ»¶ÔÊı
-	System.out.println(Math.round(b));//ËÄÉáÎåÈë
-	System.out.println(Math.max(a, b));//È¡´ó
+	System.out.println(Math.pow(a, b));//açš„bæ¬¡å¹‚
+	System.out.println(Math.sqrt(b));//bçš„å¹³æ–¹æ ¹
+	System.out.println(Math.log(b));//bçš„è‡ªç„¶å¯¹æ•°
+	System.out.println(Math.round(b));//å››èˆäº”å…¥
+	System.out.println(Math.max(a, b));//å–å¤§
 	System.out.println(Math.min(a, b));//
-	System.out.println(Math.random());//Ëæ»úÊı
+	System.out.println(Math.random());//éšæœºæ•°
 	
 	}
 }

@@ -1,6 +1,6 @@
 package test;
 
-public class Ö±½ÇÈý½ÇÐÎ1 {
+public class ç›´è§’ä¸‰è§’å½¢1 {
 
 	/**
 	 * @param args
