@@ -1,11 +1,11 @@
 package classAn;
 public class MoveToolsFactory {
 	public static MoveTools createTool(String type) {
-		// ²Ù×÷1
-		// ²Ù×÷2
-		// ¡£
-		// ¡£
-		// ²Ù×÷10
+		// æ“ä½œ1
+		// æ“ä½œ2
+		// ã€‚
+		// ã€‚
+		// æ“ä½œ10
 		if (type.equals("car")) {
 			return new Car();
 		} 

@@ -11,12 +11,12 @@ class guanliyuankaihu {
 	public void kaihu()
 	{
 		Scanner s3=new Scanner(System.in);
-		System.out.print("ÇëÊäÈë¿ª»§»§Ãû£º");
+		System.out.print("è¯·è¾“å…¥å¼€æˆ·æˆ·åï¼š");
 		String name=s3.next();
-		System.out.print("ÇëÊäÈë¿ª»§½ğ¶î£º");
+		System.out.print("è¯·è¾“å…¥å¼€æˆ·é‡‘é¢ï¼š");
 		Scanner s4=new Scanner(System.in);
 		Double jine=s4.nextDouble();
-		System.out.print("ÇëÑ¡ÔñÀûÏ¢ÀàĞÍ£¨1.¹Ì¶¨ÀûÂÊ 2.¸¡¶¯ÀûÂÊ£©£º");
+		System.out.print("è¯·é€‰æ‹©åˆ©æ¯ç±»å‹ï¼ˆ1.å›ºå®šåˆ©ç‡ 2.æµ®åŠ¨åˆ©ç‡ï¼‰ï¼š");
 		Scanner s5=new Scanner(System.in);
 		int n=s5.nextInt();
 		Double lilv;
@@ -47,16 +47,16 @@ class guanliyuankaihu {
 		PreparedStatement ps1=null;
 		try {
 			Class.forName("org.gjt.mm.mysql.Driver").newInstance();
-			//System.out.println("¼ÓÔØÇı¶¯");
+			//System.out.println("åŠ è½½é©±åŠ¨");
 			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/yinhang?user=root&password=123456");
-			//System.out.println("»ñÈ¡Á¬½Ó");
-			ps2=conn.prepareStatement(sql2);		 //Í³¼ÆÒÑÓĞid¸öÊı
+			//System.out.println("è·å–è¿æ¥");
+			ps2=conn.prepareStatement(sql2);		 //ç»Ÿè®¡å·²æœ‰idä¸ªæ•°
 			rs=ps2.executeQuery();
 			int id=0;
 			while(rs.next())
 			{
 				kehu kk=new kehu();
-				id=rs.getInt("count(*)")+101;			//ÔÚÒÑÓĞid¸öÊıµÄ»ù´¡ÉÏ¼Ó1Îª¿ª»§ÕßµÄid
+				id=rs.getInt("count(*)")+101;			//åœ¨å·²æœ‰idä¸ªæ•°çš„åŸºç¡€ä¸ŠåŠ 1ä¸ºå¼€æˆ·è€…çš„id
 			}						
 			ps1=conn.prepareStatement(sql1);			
 			ps1.setInt(1,id);
@@ -64,7 +64,7 @@ class guanliyuankaihu {
 			ps1.setDouble(3,jine);
 			ps1.setDouble(4,lilv);
 			ps1.executeUpdate();
-			System.out.println("¿ª»§³É¹¦£¡£¡£¡");
+			System.out.println("å¼€æˆ·æˆåŠŸï¼ï¼ï¼");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -78,7 +78,7 @@ class guanliyuankaihu {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}}
-			if(ps2!=null)//¹Ø±ÕÁ¬½Ó
+			if(ps2!=null)//å…³é—­è¿æ¥
 				{try {
 					ps2.close();
 				} catch (SQLException e) {

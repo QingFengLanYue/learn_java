@@ -2,7 +2,7 @@ package classAn;
 
 public class SingleTon {
 	
-	//¶öººÊ½
+	//é¥¿æ±‰å¼
 	private static SingleTon st=new SingleTon();
 	
 	public static SingleTon getInstance()
@@ -17,7 +17,7 @@ public class SingleTon {
 	
 	public void  show()
 	{
-		System.out.println("ÎÒ¾ÍÊÇÒ»¸öÆÕÍ¨µÄ·½·¨");
+		System.out.println("æˆ‘å°±æ˜¯ä¸€ä¸ªæ™®é€šçš„æ–¹æ³•");
 	}
 	
 	public static void main(String[] args)
