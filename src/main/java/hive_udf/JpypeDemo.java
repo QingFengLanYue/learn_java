@@ -1,4 +1,4 @@
-package test;
+package hive_udf;
 
 public class JpypeDemo {
 

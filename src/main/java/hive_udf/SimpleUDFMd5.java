@@ -1,4 +1,4 @@
-package test;
+package hive_udf;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hive.ql.exec.Description;
