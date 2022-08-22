@@ -9,10 +9,10 @@ public class math {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("请输入一个数");
+		System.out.println("璇疯緭鍏ヤ竴涓暟");
 		Scanner sc1=new Scanner(System.in);
 		int x=sc1.nextInt();
-		System.out.println("请输入另一个数");
+		System.out.println("璇疯緭鍏ュ彟涓�涓暟");
 		Scanner sc2=new Scanner(System.in);
 		;int y=sc2.nextInt();
 		System.out.println(Math.round(Math.cbrt(Math.max(Math.abs(x),Math.abs(y)))));
