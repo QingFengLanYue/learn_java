@@ -13,10 +13,10 @@ public class qq{
 			String sql="insert hehe into value (?,?,?,?,?,?)";
 			Class.forName("org.gjt.mm.mysql.Driver").newInstance();
 			
-			System.out.println("加载驱动");
+			System.out.println("鍔犺浇椹卞姩");
 			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost/haha?user=root&password=123456");
 			
-			System.out.println("获取链接");
+			System.out.println("鑾峰彇閾炬帴");
 		
 			PreparedStatement ps=conn.prepareStatement(sql);
 			ps.setString(1, "x");

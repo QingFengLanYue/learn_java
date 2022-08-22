@@ -3,7 +3,7 @@ public class Car extends MoveTools {
 
 	@Override
 	public void run() {
-		System.out.println("Ã°×ÅºÚÑÌ¿ñ±¼ÖĞ!!!!!");
+		System.out.println("å†’ç€é»‘çƒŸç‹‚å¥”ä¸­!!!!!");
 	}
 
 }
