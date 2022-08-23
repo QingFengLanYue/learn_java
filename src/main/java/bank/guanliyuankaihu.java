@@ -56,7 +56,7 @@ class guanliyuankaihu {
 			BigInteger cardNo = null;
 			while(rs.next())
 			{
-				kehu kk=new kehu();
+//				kehu kk=new kehu();
 				BigInteger bi1 = new BigInteger("60000000001");
 				int x = rs.getInt("max(id)");            //在已有id个数的基础上加1为开户者的id
 				BigInteger bi2 = new BigInteger(String.valueOf(x));
@@ -68,7 +68,7 @@ class guanliyuankaihu {
 			ps1.setDouble(3,jine);
 			ps1.setDouble(4,lilv);
 			ps1.executeUpdate();
-			System.out.println("开户成功！！！");
+			System.out.println("开户成功！！！,卡号为: "+cardNo);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

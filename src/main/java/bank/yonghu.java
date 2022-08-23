@@ -46,12 +46,12 @@ public class yonghu {
 					{
 						System.out.println(hh.getId()+"  "+hh.getName()+"  "+hh.getJine());
 					}
-					System.out.println("请输入菜单号：");
 					System.out.println("用户模块菜单");
 					System.out.println("1.存款");
 					System.out.println("2.取款");
 					System.out.println("3.查询本账户利息");
 					System.out.println("0.退出");
+					System.out.println("请输入菜单号：");
 					Scanner s1=new Scanner(System.in);
 					int n=s1.nextInt();
 					if(n==1)
@@ -98,7 +98,7 @@ public class yonghu {
 							rs2=ps.executeQuery();
 							while(rs2.next())
 							{
-								System.out.println(rs2.getInt("card_no")+" "+rs2.getString("Name")+" "+rs2.getDouble("jine"));
+								System.out.println(rs2.getBigDecimal("card_no")+" "+rs2.getString("Name")+" "+rs2.getDouble("jine"));
 							}
 						}
 						break;
