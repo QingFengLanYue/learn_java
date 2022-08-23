@@ -10,35 +10,35 @@ import java.util.List;
 import java.util.Scanner;
 
 public class yonghu {
-	
+
 	public void denglu()
 	{
 		while(true)
 		{
-		System.out.println("ÓÃ»§Ä£¿é²Ëµ¥");
-		System.out.println("1.´æ¿î");
-		System.out.println("2.È¡¿î");
-		System.out.println("3.²éÑ¯±¾ÕË»§ÀûÏ¢");
-		System.out.println("0.ÍË³ö");
-		System.out.print("ÇëÏÈÊäÈëÒ»¸öÕË»§id:");
-		Scanner d1=new Scanner(System.in);
-		int i=d1.nextInt();
-		String sql="select * from kehu where id=?";
-		Connection conn=null;
-		PreparedStatement ps=null;
-		PreparedStatement ps1=null;
-		PreparedStatement ps2=null;
-		PreparedStatement ps3=null;
-		ResultSet rs=null;
-		ResultSet rs2=null;
-		ResultSet rs3=null;
-		List <kehu>list=new ArrayList<kehu>();
-		try {
-			Class.forName("org.gjt.mm.mysql.Driver").newInstance();
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/yinhang?user=root&password=123456");
-			ps=conn.prepareStatement(sql);
-			ps.setInt(1, i);
-			rs=ps.executeQuery();
+			System.out.println("ç”¨æˆ·æ¨¡å—èœå•");
+			System.out.println("1.å­˜æ¬¾");
+			System.out.println("2.å–æ¬¾");
+			System.out.println("3.æŸ¥è¯¢æœ¬è´¦æˆ·åˆ©æ¯");
+			System.out.println("0.é€€å‡º");
+			System.out.print("è¯·å…ˆè¾“å…¥ä¸€ä¸ªè´¦æˆ·id:");
+			Scanner d1=new Scanner(System.in);
+			int i=d1.nextInt();
+			String sql="select * from kehu where id=?";
+			Connection conn=null;
+			PreparedStatement ps=null;
+			PreparedStatement ps1=null;
+			PreparedStatement ps2=null;
+			PreparedStatement ps3=null;
+			ResultSet rs=null;
+			ResultSet rs2=null;
+			ResultSet rs3=null;
+			List <kehu>list=new ArrayList<kehu>();
+			try {
+				Class.forName("org.gjt.mm.mysql.Driver").newInstance();
+				conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/yinhang?user=root&password=123456");
+				ps=conn.prepareStatement(sql);
+				ps.setInt(1, i);
+				rs=ps.executeQuery();
 				if(rs.next())
 				{
 					kehu kh=new kehu();
@@ -50,21 +50,21 @@ public class yonghu {
 					{
 						System.out.println(hh.getId()+"  "+hh.getName()+"  "+hh.getJine());
 					}
-					System.out.println("ÇëÊäÈë²Ëµ¥ºÅ£º");
+					System.out.println("è¯·è¾“å…¥èœå•å·ï¼š");
 					Scanner s1=new Scanner(System.in);
 					int n=s1.nextInt();
 					if(n==1)
 					{
-						System.out.println("ÇëÊäÈë´æ¿î½ğ¶î£º");
+						System.out.println("è¯·è¾“å…¥å­˜æ¬¾é‡‘é¢ï¼š");
 						Scanner s2=new Scanner(System.in);
 						double m=s2.nextDouble();
 						Double yue=rs.getDouble("jine")+m;
-						String sql1="update kehu set jine=? where id=?";					
+						String sql1="update kehu set jine=? where id=?";
 						ps1=conn.prepareStatement(sql1);
 						ps1.setDouble(1,yue);
 						ps1.setInt(2,i);
 						ps1.executeUpdate();
-						System.out.println(rs.getString("name")+"   ³É¹¦´æÈë"+m+"Ôª");
+						System.out.println(rs.getString("name")+"   æˆåŠŸå­˜å…¥"+m+"å…ƒ");
 						String sql2="select * from kehu where id=i";
 						ps2=conn.prepareStatement(sql2);
 						rs2=ps.executeQuery();
@@ -76,22 +76,22 @@ public class yonghu {
 					}
 					if(n==2)
 					{
-						System.out.println("ÇëÊäÈëÈ¡¿î½ğ¶î£º");
+						System.out.println("è¯·è¾“å…¥å–æ¬¾é‡‘é¢ï¼š");
 						Scanner s2=new Scanner(System.in);
 						double m=s2.nextInt();
 						if(m>rs.getDouble("jine"))
 						{
-							System.out.println("Óà¶î²»×ã");
+							System.out.println("ä½™é¢ä¸è¶³");
 						}
 						else
 						{
 							Double yue=rs.getDouble("jine")-m;
-							String sql1="update kehu set jine=? where id=?";					
+							String sql1="update kehu set jine=? where id=?";
 							ps1=conn.prepareStatement(sql1);
 							ps1.setDouble(1,yue);
 							ps1.setInt(2,i);
 							ps1.executeUpdate();
-							System.out.println(rs.getString("Name")+"³É¹¦È¡³ö"+m+"Ôª");
+							System.out.println(rs.getString("Name")+"æˆåŠŸå–å‡º"+m+"å…ƒ");
 							String sql2="select * from kehu where id=i";
 							ps2=conn.prepareStatement(sql2);
 							rs2=ps.executeQuery();
@@ -99,7 +99,7 @@ public class yonghu {
 							{
 								System.out.println(rs2.getInt("id")+" "+rs2.getString("Name")+" "+rs2.getDouble("jine"));
 							}
-						}	
+						}
 						break;
 					}
 					if(n==3)
@@ -110,7 +110,7 @@ public class yonghu {
 						rs3=ps3.executeQuery();
 						while(rs3.next())
 						{
-							System.out.println(rs3.getString("name")+"µÄÀûÏ¢ÊÇ£º"+rs3.getDouble("jine")*rs3.getDouble("lilv")+"Ôª");
+							System.out.println(rs3.getString("name")+"çš„åˆ©æ¯æ˜¯ï¼š"+rs3.getDouble("jine")*rs3.getDouble("lilv")+"å…ƒ");
 						}
 						break;
 					}
@@ -121,14 +121,14 @@ public class yonghu {
 				}
 				else
 				{
-					System.out.println("¸ÃÕËºÅ²»´æÔÚ");
+					System.out.println("è¯¥è´¦å·ä¸å­˜åœ¨");
 					break;
 				}
-				
-		} catch (Exception e) {
-			e.printStackTrace();
-			} 
-		finally{
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			finally{
 				if(rs!=null)
 				{
 					try {
@@ -139,19 +139,19 @@ public class yonghu {
 					}
 				}
 				if(ps!=null)
-				try {
-					ps.close();
-				} catch (SQLException e) {
+					try {
+						ps.close();
+					} catch (SQLException e) {
 						// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+						e.printStackTrace();
+					}
 				if(conn!=null)
-				try {
-					conn.close();
-				} catch (SQLException e) {
+					try {
+						conn.close();
+					} catch (SQLException e) {
 						// TODO Auto-generated catch block
-					e.printStackTrace();
-				}	
+						e.printStackTrace();
+					}
 			}
 		}
 	}

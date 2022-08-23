@@ -7,29 +7,29 @@ import java.util.Scanner;
 public class yinhang {
 
 	public static void main(String[] args) {
-		
-		while (true){
-		System.out.println("################################");	
-		System.out.println("ÇëÑ¡Ôñ£º 1-¹ÜÀíÔ±     2-ÓÃ»§     0-ÍË³ö");
-		Scanner s1=new Scanner(System.in);
-		int i=s1.nextInt();
-		if(i==1)
-		{
-			guanliyuan gg=new guanliyuan();
-			gg.guanli();
-		}
-		if(i==2)
-		{
-			yonghu yy=new yonghu();
-			yy.denglu();
-			
-			
-		}
-		if(i==0)
-		{
-			break;
-		}
-	}
 
-}
+		while (true){
+			System.out.println("################################");
+			System.out.println("è¯·é€‰æ‹©ï¼š 1-ç®¡ç†å‘˜     2-ç”¨æˆ·     0-é€€å‡º");
+			Scanner s1=new Scanner(System.in);
+			int i=s1.nextInt();
+			if(i==1)
+			{
+				guanliyuan gg=new guanliyuan();
+				gg.guanli();
+			}
+			if(i==2)
+			{
+				yonghu yy=new yonghu();
+				yy.denglu();
+
+
+			}
+			if(i==0)
+			{
+				break;
+			}
+		}
+
+	}
 }

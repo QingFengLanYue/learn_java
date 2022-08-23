@@ -8,19 +8,19 @@ class guanliyuan {
 	{
 		while(true)
 		{	
-			System.out.println("¹ÜÀíÔ±Ä£¿é²Ëµ¥");
-			System.out.println("1. ¿ª»§");
-			System.out.println("2. ²éÑ¯ËùÓĞÕË»§");
-			System.out.println("0. ÍË³ö ");
-			System.out.print("ÇëÊäÈë²Ëµ¥ºÅ£º");
+			System.out.println("ç®¡ç†å‘˜æ¨¡å—èœå•");
+			System.out.println("1. å¼€æˆ·");
+			System.out.println("2. æŸ¥è¯¢æ‰€æœ‰è´¦æˆ·");
+			System.out.println("0. é€€å‡º ");
+			System.out.print("è¯·è¾“å…¥èœå•å·ï¼š");
 			Scanner s2=new Scanner(System.in);
 			int i=s2.nextInt();
-			if(i==1)										//¿ª»§
+			if(i==1)										//å¼€æˆ·
 			{	
 				guanliyuankaihu kk=new guanliyuankaihu();
 				kk.kaihu();
 			}
-			else if(i==2)				//²éÑ¯ËùÓĞÕË»§ĞÅÏ¢
+			else if(i==2)				//æŸ¥è¯¢æ‰€æœ‰è´¦æˆ·ä¿¡æ¯
 			{
 				guanliyuanchaxun cc=new guanliyuanchaxun();
 				List <kehu>list=cc.chaxun();
