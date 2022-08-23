@@ -4,21 +4,21 @@ public class guangPan
 { 
  public static void main(String [] args)
 {       
-	System.out.print("ÇëÊäÈë¹ºÂòÊýÁ¿;");
+	System.out.print("è¯·è¾“å…¥è´­ä¹°æ•°é‡;");
 	Scanner a=new Scanner(System.in);
 	int b=a.nextInt();
 	if (b>=500)
-	System.out.println("¹ºÂò"+b+"ÕÅ£¬×Ü¹²"+b*3.5*0.85);
+	System.out.println("è´­ä¹°"+b+"å¼ ï¼Œæ€»å…±"+b*3.5*0.85);
 	else if (b>=400)
-	System.out.println("¹ºÂò"+b+"ÕÅ£¬×Ü¹²"+b*3.5*0.9);
+	System.out.println("è´­ä¹°"+b+"å¼ ï¼Œæ€»å…±"+b*3.5*0.9);
 	else if (b>=300)
-	System.out.println("¹ºÂò"+b+"ÕÅ£¬×Ü¹²"+b*3.5*0.92);
+	System.out.println("è´­ä¹°"+b+"å¼ ï¼Œæ€»å…±"+b*3.5*0.92);
 	else if (b>=200)
-	System.out.println("¹ºÂò"+b+"ÕÅ£¬×Ü¹²"+b*3.5*0.94);
+	System.out.println("è´­ä¹°"+b+"å¼ ï¼Œæ€»å…±"+b*3.5*0.94);
 	else if (b>=100)
-	System.out.println("¹ºÂò"+b+"ÕÅ£¬×Ü¹²"+b*3.5*0.95);
+	System.out.println("è´­ä¹°"+b+"å¼ ï¼Œæ€»å…±"+b*3.5*0.95);
 	else
-	System.out.println("¹ºÂò"+b+"ÕÅ£¬×Ü¹²"+b*3.5);
+	System.out.println("è´­ä¹°"+b+"å¼ ï¼Œæ€»å…±"+b*3.5);
 
 }	
 }

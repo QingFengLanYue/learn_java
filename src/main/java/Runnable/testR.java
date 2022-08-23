@@ -6,13 +6,13 @@ public class testR {
 	public static void main(String[] args) {
 		
 		testThread tt=new testThread();
-		//tt.run(); ¼´Ê¹ÄãµÄÀà³Ğ¼Ì¶àÏß³ÌÀà£¬Èç¹ûÄãÓÃ  ¶ÔÏó.run()¶àÏß³Ì·½·¨£¬Ëü»¹ÊÇÄ¬ÈÏµ¥Ïß³Ì
+		//tt.run(); å³ä½¿ä½ çš„ç±»æ‰¿ç»§å¤šçº¿ç¨‹ç±»ï¼Œå¦‚æœä½ ç”¨  å¯¹è±¡.run()å¤šçº¿ç¨‹æ–¹æ³•ï¼Œå®ƒè¿˜æ˜¯é»˜è®¤å•çº¿ç¨‹
 		
-		testRunnable tr=new testRunnable();//´´½¨ÊµÏÖRunnable½Ó¿Ú£¬×ÓÀàµÄµÄ¶ÔÏó
-		Thread ta=new Thread(tr);//¹¹ÔìÒ»¸öThreadÀà£¬²¢ÔÚ¹¹Ôìº¯ÊıÖĞ°ÑÉÏÒ»²½µÄ¶ÔÏó´«Èë
+		testRunnable tr=new testRunnable();//åˆ›å»ºå®ç°Runnableæ¥å£ï¼Œå­ç±»çš„çš„å¯¹è±¡
+		Thread ta=new Thread(tr);//æ„é€ ä¸€ä¸ªThreadç±»ï¼Œå¹¶åœ¨æ„é€ å‡½æ•°ä¸­æŠŠä¸Šä¸€æ­¥çš„å¯¹è±¡ä¼ å…¥
 		
-		ta.start();//ThreadÀàµÄ¶ÔÏó µ÷ÓÃstart()ÊµÏÖ¶àÏß³Ì·½·¨
-		tt.start();//Äãµ÷ÓÃ start()  javaµ×²ã»á×Ô¶¯À´µ÷ÓÃ run()¶àÏß³Ì·½·¨,ÊµÏÖ¶àÏß³Ì
+		ta.start();//Threadç±»çš„å¯¹è±¡ è°ƒç”¨start()å®ç°å¤šçº¿ç¨‹æ–¹æ³•
+		tt.start();//ä½ è°ƒç”¨ start()  javaåº•å±‚ä¼šè‡ªåŠ¨æ¥è°ƒç”¨ run()å¤šçº¿ç¨‹æ–¹æ³•,å®ç°å¤šçº¿ç¨‹
 		
 	/*	int i=0;
 		while(i++ <5)

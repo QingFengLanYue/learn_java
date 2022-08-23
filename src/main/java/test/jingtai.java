@@ -1,3 +1,4 @@
+package test;
 class weibu
 	{
 	int a=1;

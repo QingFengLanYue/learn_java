@@ -6,13 +6,13 @@ public class chengJibiao
 		{
 			int a=(int)(Math.random()*100+1);
 				if(a>=90)
-				System.out.println(a+"ÓÅĞã");
+				System.out.println(a+"ä¼˜ç§€");
 				else if(a>=80)
-				System.out.println(a+"Á¼ºÃ");
+				System.out.println(a+"è‰¯å¥½");
 				else if(a>=70)
-				System.out.println(a+"²»´í");
+				System.out.println(a+"ä¸é”™");
 				else if(a>=60)
-				System.out.println(a+"¼°¸ñ");
+				System.out.println(a+"åŠæ ¼");
 				else
-				System.out.println(a+"²»¼°¸ñ");
+				System.out.println(a+"ä¸åŠæ ¼");
 	}        }

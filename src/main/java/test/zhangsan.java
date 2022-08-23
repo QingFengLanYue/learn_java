@@ -1,3 +1,4 @@
+package test;
 class zhang
 	 {
 	String name;

@@ -1,4 +1,4 @@
-
+package goods;
 public class a {
 
 

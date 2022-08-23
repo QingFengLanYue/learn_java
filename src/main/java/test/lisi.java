@@ -1,3 +1,4 @@
+package test;
 class li
 	{
 	private String name="zhangsan";
