@@ -1,7 +1,6 @@
 package bank;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -34,8 +33,7 @@ public class yonghu {
 			ResultSet rs3=null;
 			List <kehu>list=new ArrayList<kehu>();
 			try {
-				Class.forName("org.gjt.mm.mysql.Driver").newInstance();
-				conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/yinhang?user=root&password=123456");
+				conn = JdbcUtil.getConnection();
 				ps=conn.prepareStatement(sql);
 				ps.setInt(1, i);
 				rs=ps.executeQuery();

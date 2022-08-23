@@ -39,30 +39,31 @@ class guanliyuankaihu {
 				lilv=0.05;
 			}	
 		}
-		String sql1="insert into kehu values(?,?,?,?)";
+		String sql1="insert into kehu(name,jine,lilv) values(?,?,?)";
 		String sql2="select count(*) from kehu";
 		Connection conn=null;
 		PreparedStatement ps2=null;
 		ResultSet rs=null;
 		PreparedStatement ps1=null;
 		try {
-			Class.forName("org.gjt.mm.mysql.Driver").newInstance();
-			//System.out.println("加载驱动");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/yinhang?user=root&password=123456");
+//			Class.forName("org.gjt.mm.mysql.Driver").newInstance();
+//			//System.out.println("加载驱动");
+//			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/yinhang?user=root&password=123456");
 			//System.out.println("获取连接");
+			conn = JdbcUtil.getConnection();
 			ps2=conn.prepareStatement(sql2);		 //统计已有id个数
 			rs=ps2.executeQuery();
-			int id=0;
-			while(rs.next())
-			{
-				kehu kk=new kehu();
-				id=rs.getInt("count(*)")+101;			//在已有id个数的基础上加1为开户者的id
-			}						
+//			int id=0;
+//			while(rs.next())
+//			{
+//				kehu kk=new kehu();
+//				id=rs.getInt("count(*)")+101;			//在已有id个数的基础上加1为开户者的id
+//			}
 			ps1=conn.prepareStatement(sql1);			
-			ps1.setInt(1,id);
-			ps1.setString(2,name);
-			ps1.setDouble(3,jine);
-			ps1.setDouble(4,lilv);
+//			ps1.setInt(1,id);
+			ps1.setString(1,name);
+			ps1.setDouble(2,jine);
+			ps1.setDouble(3,lilv);
 			ps1.executeUpdate();
 			System.out.println("开户成功！！！");
 		} catch (Exception e) {
