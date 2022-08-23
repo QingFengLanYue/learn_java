@@ -26,7 +26,7 @@ class guanliyuan {
 				List <kehu>list=cc.chaxun();
 				for(kehu hh:list)
 				{
-					System.out.println(hh.getId()+"  "+hh.getName()+"  "+hh.getJine());
+					System.out.println(hh.getCardNo()+"  "+hh.getName()+"  "+hh.getJine());
 				}	
 			}
 			else

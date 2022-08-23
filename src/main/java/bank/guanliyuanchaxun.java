@@ -1,5 +1,6 @@
 package bank;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -22,7 +23,7 @@ class guanliyuanchaxun {
 			rs = ps.executeQuery();
 			while (rs.next()) {
 				kehu kh = new kehu();
-				kh.setId(rs.getInt("id"));
+				kh.setCardNo(rs.getBigDecimal("card_no"));
 				kh.setName(rs.getString("name"));
 				kh.setJine(rs.getDouble("jine"));
 				list.add(kh);

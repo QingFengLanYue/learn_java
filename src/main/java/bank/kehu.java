@@ -1,10 +1,14 @@
 package bank;
 
+import java.math.BigDecimal;
+
 public class kehu {
 	private String name;
 	private double jine;
 	private double lilv;
 	private int id;
+	private BigDecimal card_no;
+
 	public String getName() {
 		return name;
 	}
@@ -29,8 +33,14 @@ public class kehu {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	
-	
-	
+	public BigDecimal getCardNo() {
+		return card_no;
+	}
+	public void setCardNo(BigDecimal card_no) {
+		this.card_no = card_no;
+	}
+
+
+
+
 }

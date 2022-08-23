@@ -1,12 +1,12 @@
 package bank;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
-
+import java.math.BigInteger;
 class guanliyuankaihu {
 	public void kaihu()
 	{
@@ -39,8 +39,8 @@ class guanliyuankaihu {
 				lilv=0.05;
 			}	
 		}
-		String sql1="insert into kehu(name,jine,lilv) values(?,?,?)";
-		String sql2="select count(*) from kehu";
+		String sql1="insert into kehu(card_no,name,jine,lilv) values(?,?,?,?)";
+		String sql2="select max(id) from kehu";
 		Connection conn=null;
 		PreparedStatement ps2=null;
 		ResultSet rs=null;
@@ -53,17 +53,20 @@ class guanliyuankaihu {
 			conn = JdbcUtil.getConnection();
 			ps2=conn.prepareStatement(sql2);		 //统计已有id个数
 			rs=ps2.executeQuery();
-//			int id=0;
-//			while(rs.next())
-//			{
-//				kehu kk=new kehu();
-//				id=rs.getInt("count(*)")+101;			//在已有id个数的基础上加1为开户者的id
-//			}
+			BigInteger cardNo = null;
+			while(rs.next())
+			{
+				kehu kk=new kehu();
+				BigInteger bi1 = new BigInteger("60000000001");
+				int x = rs.getInt("max(id)");            //在已有id个数的基础上加1为开户者的id
+				BigInteger bi2 = new BigInteger(String.valueOf(x));
+				cardNo=bi2.add(bi1);
+			}
 			ps1=conn.prepareStatement(sql1);			
-//			ps1.setInt(1,id);
-			ps1.setString(1,name);
-			ps1.setDouble(2,jine);
-			ps1.setDouble(3,lilv);
+			ps1.setBigDecimal(1, BigDecimal.valueOf(Long.parseLong(String.valueOf(cardNo))));
+			ps1.setString(2,name);
+			ps1.setDouble(3,jine);
+			ps1.setDouble(4,lilv);
 			ps1.executeUpdate();
 			System.out.println("开户成功！！！");
 		} catch (Exception e) {
